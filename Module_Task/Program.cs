@@ -1,5 +1,7 @@
 ﻿using ModuleTask.Concrete;
 
+List<Product> soldItems = new();
+
 User admin = new User();
 admin.FullName = "Ravan Mammadov";
 admin.Password = "12345";

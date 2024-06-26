@@ -89,6 +89,31 @@ namespace ModuleTask.Concrete
             }
             return null;
         }
+
+        public void ReturnItem(User user, List<Product> soldItems, Product product)
+        {
+            List<string> haveAccessRoles = new()
+            {
+                "Admin","Head Cassier","Satici"
+            };
+            if (CheckAccessHelper.CheckPermission(user, haveAccessRoles))
+            {
+                soldItems.Remove(product);
+            }
+        }
+
+        public void SellItem(User user, List<Product> soldItems, Product product)
+        {
+            List<string> haveAccessRoles = new()
+            {
+                "Admin","Head Cassier","Satici"
+            };
+            if (CheckAccessHelper.CheckPermission(user, haveAccessRoles))
+            {
+                soldItems.Add(product);
+            }
+        }
+
         public void Update(User user, Product? selectedProduct)
         {
             List<string> haveAccessRoles = new()

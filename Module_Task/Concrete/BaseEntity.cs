@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ModuleTask.Abstract
+namespace Module_Task.Concrete
 {
-    public interface IEntity
+    public class BaseEntity
     {
-
+        public int Id { get; set; }
     }
 }

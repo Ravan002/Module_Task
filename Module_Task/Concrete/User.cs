@@ -1,4 +1,5 @@
-﻿using ModuleTask.Abstract;
+﻿using Module_Task.Concrete;
+using ModuleTask.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ModuleTask.Concrete
 {
-    public class User : IEntity
+    public class User : BaseEntity
     {
         private static int _lastId = 1;
         public string FullName { get; set; }

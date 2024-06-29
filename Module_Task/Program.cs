@@ -107,4 +107,3 @@ productManager.Add(admin, product3);
 // CheckAccessHelper bir static class-dir ve icinde CheckPermission adli static bir method var.
 // Access olub olmadigini yoxlamaga komek edir. Helper class oldugundan ayrica bir static class yaradib orada istifade etmeyi uygun gordum.
 
-// Satmaq ve qaytarmaq ucun methodlari sadece list yaradib remove ve add eleyerek duzelde bilerik (Vaxt qalmadigindan yaza bilmedim).
